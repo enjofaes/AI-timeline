@@ -1,8 +1,7 @@
 # AI-timeline
 This Timeline is open for everyone. The timeline is a proposition, based on a course I'm following from GARP (Risk and AI). 
 
-Complete Risk & AI Timeline
-1900s: Foundations and Early AI Research
+**1900s: Foundations and Early AI Research**
 -	1936: Alan Turing introduces the concept of the Turing Machine, a theoretical foundation for modern computing.
 -	1941: Alan Turing begins contemplating AI during his work at Bletchley Park.
 -	1943: Warren McCulloch and Walter Pitts publish “A Logical Calculus of the Ideas Immanent in Nervous Activity,” a foundational work in neural networks.
@@ -25,6 +24,7 @@ Complete Risk & AI Timeline
   - The Connectionism Movement emphasizes parallel distributed processing, providing biological inspiration for AI.
 -	1997: IBM’s Deep Blue defeats Garry Kasparov in chess.
 - 1998: Yann LeCun develops LeNet-5, a convolutional neural network (CNN) for handwritten digit recognition.
+
 **2000s: Early AI Developments and Ethical Considerations**
 - 2001: The film "A.I. Artificial Intelligence" is released: Bringing AI and its ethical implications into mainstream public discourse.
 - 	2004:
@@ -39,6 +39,7 @@ Complete Risk & AI Timeline
 - 2009:
   - Google starts developing self-driving cars: Marking significant investment in autonomous vehicle technology.
   - The Machine Intelligence Research Institute (MIRI) is founded: Focusing on AI safety and risk.
+
 **2010s: Deep Learning Foundations and Emerging Risks**
 - 2011:
   - IBM's Watson wins Jeopardy!: Demonstrating advanced natural language processing capabilities.
@@ -56,6 +57,7 @@ Complete Risk & AI Timeline
   - Amazon launches Alexa and the Echo: Bringing voice-activated AI assistants into homes.
   - Elon Musk and Stephen Hawking warn about AI risks: Highlighting potential existential threats from advanced AI.
   - The Future of Life Institute is founded: Aiming to mitigate existential risks, including those from AI.
+
 **2015–2017: Early Ethical and Governance Milestones**
 - 2015:
   - OpenAI is founded: With the mission to ensure that artificial general intelligence (AGI) benefits all of humanity.
@@ -71,6 +73,7 @@ Complete Risk & AI Timeline
   - China announces its Next Generation AI Development Plan: Emphasizing AI leadership and ethical considerations.
   - The Partnership on AI becomes operational: Founded by companies like Amazon, Apple, Google, Facebook, IBM, and Microsoft to study and formulate best practices on AI technologies.
   - DeepMind develops AlphaGo Zero and AlphaZero: AI systems that learn without human data, raising discussions about self-learning AI.
+
 **2018–2020: Strengthening Governance and Ethical Frameworks**
 -	2018:
   -	The General Data Protection Regulation (GDPR) comes into effect in the EU: Imposing strict rules on data protection and privacy, impacting AI systems handling personal data.
@@ -94,6 +97,7 @@ Complete Risk & AI Timeline
   - The AI Incident Database is launched: A platform collecting reports of AI failures and harms to improve transparency and safety.
   - OpenAI releases GPT-3: Dramatically advancing NLP capabilities and leading to discussions on AI-generated content and its risks.
   - DeepMind's AlphaFold 2 solves the protein folding problem: Recognized as a significant scientific breakthrough.
+
 **2021–2024: Advancements in AI Ethics and Regulation, as well as in AI itself**
 -	2021:
   -	UNESCO adopts the Recommendation on the Ethics of Artificial Intelligence: The first global standard-setting instrument on AI ethics.
