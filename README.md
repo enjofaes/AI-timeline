@@ -3,27 +3,27 @@ This Timeline is open for everyone. The timeline is a proposition, based on a co
 
 Complete Risk & AI Timeline
 1900s: Foundations and Early AI Research
-•	1936: Alan Turing introduces the concept of the Turing Machine, a theoretical foundation for modern computing.
-•	1941: Alan Turing begins contemplating AI during his work at Bletchley Park.
-•	1943: Warren McCulloch and Walter Pitts publish “A Logical Calculus of the Ideas Immanent in Nervous Activity,” a foundational work in neural networks.
-•	1947: The Nuremberg Code introduces informed consent and ethics in human experimentation.
-•	1948: The Universal Declaration of Human Rights (UDHR) is adopted.
-•	1949: Donald Hebb publishes The Organization of Behavior, proposing a theory of associative learning in neural networks (Hebbian learning).
-•	1950:
-o	Alan Turing publishes “Computing Machinery and Intelligence,” introducing the Turing Test.
-o	Isaac Asimov introduces The Three Laws of Robotics.
-•	1955: Allen Newell, Herbert Simon, and Cliff Shaw develop the Logic Theorist, an AI program that proves many theorems in Principia Mathematica.
-•	1956: The Dartmouth Conference, led by John McCarthy, coins the term Artificial Intelligence.
-•	1958:
-o	Frank Rosenblatt introduces the Perceptron, one of the first neural network models.
-o	Rosenblatt’s approach uses probability theory instead of symbolic logic, marking a departure from earlier methods.
-•	1959: Arthur Samuel develops a self-learning program for checkers.
-•	1969: Marvin Minsky and Seymour Papert critique single-layer perceptrons in their book Perceptrons, halting neural network research for years.
-•	1982: Introduction of Principal Component Analysis (PCA) for dimensionality reduction and data analysis.
-•	1986:
-o	David Rumelhart, James McClelland, and the PDP Group popularize backpropagation learning in their Parallel Distributed Processing volumes, reviving neural networks.
-o	The Connectionism Movement emphasizes parallel distributed processing, providing biological inspiration for AI.
-•	1997: IBM’s Deep Blue defeats Garry Kasparov in chess.
+-	1936: Alan Turing introduces the concept of the Turing Machine, a theoretical foundation for modern computing.
+-	1941: Alan Turing begins contemplating AI during his work at Bletchley Park.
+-	1943: Warren McCulloch and Walter Pitts publish “A Logical Calculus of the Ideas Immanent in Nervous Activity,” a foundational work in neural networks.
+-	1947: The Nuremberg Code introduces informed consent and ethics in human experimentation.
+-	1948: The Universal Declaration of Human Rights (UDHR) is adopted.
+-	1949: Donald Hebb publishes The Organization of Behavior, proposing a theory of associative learning in neural networks (Hebbian learning).
+-	1950:
+>	Alan Turing publishes “Computing Machinery and Intelligence,” introducing the Turing Test.
+>	Isaac Asimov introduces The Three Laws of Robotics.
+-	1955: Allen Newell, Herbert Simon, and Cliff Shaw develop the Logic Theorist, an AI program that proves many theorems in Principia Mathematica.
+-	1956: The Dartmouth Conference, led by John McCarthy, coins the term Artificial Intelligence.
+-	1958:
+>	Frank Rosenblatt introduces the Perceptron, one of the first neural network models.
+>	Rosenblatt’s approach uses probability theory instead of symbolic logic, marking a departure from earlier methods.
+-	1959: Arthur Samuel develops a self-learning program for checkers.
+-	1969: Marvin Minsky and Seymour Papert critique single-layer perceptrons in their book Perceptrons, halting neural network research for years.
+-	1982: Introduction of Principal Component Analysis (PCA) for dimensionality reduction and data analysis.
+-	1986:
+>	David Rumelhart, James McClelland, and the PDP Group popularize backpropagation learning in their Parallel Distributed Processing volumes, reviving neural networks.
+>	The Connectionism Movement emphasizes parallel distributed processing, providing biological inspiration for AI.
+-	1997: IBM’s Deep Blue defeats Garry Kasparov in chess.
 •	1998: Yann LeCun develops LeNet-5, a convolutional neural network (CNN) for handwritten digit recognition.
 ________________________________________
 2000s: Early AI Developments and Ethical Considerations
