@@ -49,6 +49,7 @@ This Timeline is open for everyone. The timeline is a proposition, based on a co
   - Neural networks become dominant in computer vision benchmarks.
   - Google Brain project recognizes cats in YouTube videos: Advancing unsupervised learning capabilities.
 -	2013:
+  - Word2Vec : a model for NLP created in 2013 by Google team led by Tomas Mikolov
   -	DeepMind’s Atari Game AI surpasses human performance in games like Pong and Breakout, using deep reinforcement learning.
   - Boston Dynamics showcases advanced robots like Atlas: Raising ethical concerns about robotics in military applications.
 - 2014:
