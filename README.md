@@ -69,6 +69,7 @@ This Timeline is open for everyone. The timeline is a proposition, based on a co
   - Tesla's Autopilot involved in a fatal crash: Raising concerns about the safety of autonomous driving systems.
   - DeepMind's AlphaGo defeats Lee Sedol 4-1 in Go: Showcasing advanced AI capabilities and sparking ethical discussions.
 - 2017:
+  - Google publishes "Attention is all you need": about Transformers and LLMs 
   - Asilomar AI Principles are published: A set of 23 guidelines to guide AI research and development towards beneficial outcomes.
   - China announces its Next Generation AI Development Plan: Emphasizing AI leadership and ethical considerations.
   - The Partnership on AI becomes operational: Founded by companies like Amazon, Apple, Google, Facebook, IBM, and Microsoft to study and formulate best practices on AI technologies.
