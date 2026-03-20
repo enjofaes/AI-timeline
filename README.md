@@ -136,4 +136,20 @@ This Timeline is open for everyone. The timeline is a proposition, based on a co
   - Large language models demonstrate superior persuasive abilities compared to humans when using personal information, highlighting AI's potential in tailored communication.
   - LAION releases BUD-E, a fully open-source voice assistant, contributing to the open AI ecosystem.
   - Researchers develop an AI-powered waste-sorting robot capable of identifying over 500 waste categories, enhancing recycling efficiency.
-  - The chatbot Grok is made open source to a substantial extent, promoting transparency and collaboration in AI development. 
+  - The chatbot Grok is made open source to a substantial extent, promoting transparency and collaboration in AI development.
+
+**2025: The Age of Reasoning Models and AI Agents**
+- 2025:
+  - January 2025: DeepSeek releases DeepSeek-R1, a powerful open-source reasoning model rivaling GPT-4 at a fraction of the cost, triggering significant market disruption and highlighting competitive AI development outside the US.
+  - February 2025: The EU AI Act's provisions on prohibited AI practices come into force, marking the first binding enforcement milestone of the regulation.
+  - OpenAI releases o3 and o3-mini reasoning models, advancing chain-of-thought capabilities and setting new benchmarks across science, math, and coding tasks.
+  - OpenAI introduces Operator, an AI agent capable of autonomously performing web-based tasks such as filling forms and booking services, marking a shift toward agentic AI.
+  - OpenAI releases GPT-4.5, improving conversational and instruction-following abilities.
+  - Google releases Gemini 2.0 Flash and Gemini 2.5 Pro, featuring multimodal reasoning and long-context capabilities, maintaining competitive pressure in the foundation model market.
+  - Anthropic releases Claude 3.7 Sonnet with extended thinking, enabling the model to reason step-by-step before responding and improving performance on complex tasks.
+  - Meta releases Llama 4 (Scout and Maverick), open-source multimodal models capable of processing images and text, further democratizing access to frontier AI.
+  - xAI releases Grok 3, a large language model with strong reasoning and coding capabilities, intensifying competition among AI labs.
+  - AI-assisted programming (often called "vibe coding") becomes mainstream, with developers increasingly using AI tools to generate, debug, and review code.
+  - Agentic AI systems—capable of planning, using tools, and executing multi-step tasks autonomously—emerge as a dominant trend across industry and research.
+  - The U.S. continues developing national AI policy, with ongoing debates around AI export controls, safety evaluations, and federal oversight frameworks.
+  - AI governance matures globally, with multiple countries introducing or refining national AI strategies and regulatory proposals, reflecting growing consensus on the need for structured oversight.
