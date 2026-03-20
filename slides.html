@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Timeline</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reset.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/theme/night.min.css" />
+  <style>
+    :root {
+      --accent: #64b5f6;
+      --accent2: #81c784;
+      --warn: #ffb74d;
+      --dim: rgba(255,255,255,0.55);
+    }
+
+    .reveal {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+    }
+
+    .reveal h1, .reveal h2, .reveal h3 {
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      text-transform: none;
+    }
+
+    .reveal h1 { font-size: 2.2em; color: var(--accent); }
+    .reveal h2 { font-size: 1.5em; color: var(--accent); border-bottom: 1px solid rgba(100,181,246,0.3); padding-bottom: 0.2em; margin-bottom: 0.6em; }
+    .reveal h3 { font-size: 1.1em; color: var(--accent2); margin-bottom: 0.3em; }
+
+    .reveal ul { list-style: none; padding: 0; margin: 0; }
+    .reveal ul li { padding: 0.25em 0 0.25em 1.4em; position: relative; font-size: 0.78em; line-height: 1.45; }
+    .reveal ul li::before { content: "▸"; position: absolute; left: 0; color: var(--accent); }
+
+    .reveal .sub li { font-size: 0.72em; color: var(--dim); }
+    .reveal .sub li::before { color: var(--accent2); content: "–"; }
+
+    .year {
+      display: inline-block;
+      background: rgba(100,181,246,0.15);
+      border: 1px solid rgba(100,181,246,0.35);
+      border-radius: 4px;
+      padding: 0.05em 0.45em;
+      font-weight: 700;
+      font-size: 0.9em;
+      color: var(--accent);
+      margin-right: 0.4em;
+      white-space: nowrap;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.65em;
+      padding: 0.1em 0.5em;
+      border-radius: 20px;
+      font-weight: 600;
+      vertical-align: middle;
+      margin-left: 0.3em;
+    }
+    .tag-tech  { background: rgba(100,181,246,0.2); color: #90caf9; border: 1px solid rgba(100,181,246,0.4); }
+    .tag-gov   { background: rgba(129,199,132,0.2); color: #a5d6a7; border: 1px solid rgba(129,199,132,0.4); }
+    .tag-risk  { background: rgba(255,183,77,0.2);  color: #ffcc80; border: 1px solid rgba(255,183,77,0.4); }
+    .tag-winter{ background: rgba(176,190,197,0.2); color: #cfd8dc; border: 1px solid rgba(176,190,197,0.4); }
+
+    .columns { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2em; align-items: start; }
+    .columns3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.8em; align-items: start; }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 0.8em 1em;
+    }
+
+    .title-slide .subtitle {
+      font-size: 1em;
+      color: var(--dim);
+      margin-top: 0.5em;
+    }
+    .title-slide .meta {
+      margin-top: 2em;
+      font-size: 0.7em;
+      color: rgba(255,255,255,0.35);
+    }
+
+    .big-moment {
+      background: linear-gradient(135deg, rgba(100,181,246,0.1), rgba(129,199,132,0.08));
+      border-left: 3px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 0.6em 1em;
+      margin: 0.4em 0;
+      font-size: 0.78em;
+    }
+
+    .era-badge {
+      font-size: 0.6em;
+      background: rgba(100,181,246,0.2);
+      border: 1px solid rgba(100,181,246,0.4);
+      border-radius: 20px;
+      padding: 0.15em 0.8em;
+      color: var(--accent);
+      font-weight: 600;
+      vertical-align: middle;
+      margin-left: 0.5em;
+    }
+
+    section.present { background: #0d1117; }
+  </style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<!-- ─── TITLE ─────────────────────────────────────────────── -->
+<section class="title-slide" data-background-gradient="radial-gradient(ellipse at 30% 40%, #0d2137 0%, #0d1117 70%)">
+  <h1>A History of<br>Artificial Intelligence</h1>
+  <p class="subtitle">From the Turing Machine to AI Agents</p>
+  <p class="meta">Based on a GARP course (Risk and AI) &nbsp;·&nbsp; Open-source timeline</p>
+</section>
+
+<!-- ─── OVERVIEW ───────────────────────────────────────────── -->
+<section>
+  <h2>Seven Eras</h2>
+  <div class="columns">
+    <div>
+      <ul>
+        <li><span class="year">1936–1998</span> Foundations &amp; Early Research</li>
+        <li><span class="year">2000s</span> Into the Real World</li>
+        <li><span class="year">2010s</span> Deep Learning Breakthrough</li>
+        <li><span class="year">2015–2017</span> Ethics Enters the Picture</li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li><span class="year">2018–2020</span> Governance Takes Shape</li>
+        <li><span class="year">2021–2024</span> Regulation &amp; Generative AI</li>
+        <li><span class="year">2025</span> The Age of AI Agents</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 1936–1960 ──────────────────────────────────────────── -->
+<section>
+  <h2>1936–1960 &nbsp;<span class="era-badge">Foundations</span></h2>
+  <ul>
+    <li><span class="year">1936</span> Alan Turing introduces the <strong>Turing Machine</strong> — the theoretical foundation of computing. <span class="tag tag-tech">Tech</span></li>
+    <li><span class="year">1943</span> McCulloch &amp; Pitts publish the first mathematical model of a neuron. <span class="tag tag-tech">Tech</span></li>
+    <li><span class="year">1947–1949</span> Nuremberg Code, UDHR, and Hebbian learning lay ethical and scientific groundwork. <span class="tag tag-gov">Governance</span></li>
+    <li><span class="year">1950</span> Turing proposes the <strong>Turing Test</strong>; Asimov publishes the Three Laws of Robotics. <span class="tag tag-risk">Risk</span></li>
+    <li><span class="year">1955</span> Newell, Simon &amp; Shaw build the <strong>Logic Theorist</strong>, the first AI program.</li>
+    <li><span class="year">1956</span> <strong>Dartmouth Conference</strong> — the term "Artificial Intelligence" is coined by John McCarthy. <span class="tag tag-tech">Tech</span></li>
+    <li><span class="year">1958</span> Frank Rosenblatt introduces the <strong>Perceptron</strong>, the first neural network model.</li>
+    <li><span class="year">1959</span> Arthur Samuel builds a self-learning checkers program — early machine learning.</li>
+  </ul>
+</section>
+
+<!-- ─── 1966–1993: BOOM/BUST ────────────────────────────────── -->
+<section>
+  <h2>1966–1993 &nbsp;<span class="era-badge">Boom &amp; Bust</span></h2>
+  <ul>
+    <li><span class="year">1966</span> <strong>ELIZA</strong> (Weizenbaum, MIT) — first chatbot; raises early concerns about the illusion of understanding. <span class="tag tag-risk">Risk</span></li>
+    <li><span class="year">1969</span> Minsky &amp; Papert critique the Perceptron in <em>Perceptrons</em>, freezing neural network research.</li>
+  </ul>
+  <div class="big-moment" style="margin-top:0.8em">
+    <strong>1974–1980 &nbsp;·&nbsp; First AI Winter</strong> <span class="tag tag-winter">Winter</span><br>
+    Funding collapses as hype outpaces results. A defining pattern in AI history.
+  </div>
+  <ul style="margin-top:0.6em">
+    <li><span class="year">1980</span> <strong>Expert Systems</strong> boom — XCON, MYCIN; Japan's Fifth Generation project. <span class="tag tag-tech">Tech</span></li>
+    <li><span class="year">1986</span> Rumelhart &amp; McClelland popularise <strong>backpropagation</strong>, reviving neural networks.</li>
+  </ul>
+  <div class="big-moment">
+    <strong>1987–1993 &nbsp;·&nbsp; Second AI Winter</strong> <span class="tag tag-winter">Winter</span><br>
+    Expert systems prove brittle and expensive; another funding collapse follows.
+  </div>
+</section>
+
+<!-- ─── 1997–2009 ──────────────────────────────────────────── -->
+<section>
+  <h2>1997–2009 &nbsp;<span class="era-badge">Into the World</span></h2>
+  <ul>
+    <li><span class="year">1997</span> IBM's <strong>Deep Blue</strong> defeats Garry Kasparov in chess. <span class="tag tag-tech">Tech</span></li>
+    <li><span class="year">1998</span> Yann LeCun develops <strong>LeNet-5</strong>, a CNN for digit recognition.</li>
+    <li><span class="year">2004</span> DARPA Grand Challenge — first autonomous vehicle race; no finisher, but a catalyst.</li>
+    <li><span class="year">2005</span> Stanford's <strong>Stanley</strong> wins DARPA Grand Challenge (132 miles).</li>
+    <li><span class="year">2005</span> Kurzweil publishes <em>The Singularity Is Near</em>. <span class="tag tag-risk">Risk</span></li>
+    <li><span class="year">2006</span> Hinton introduces <strong>Deep Belief Networks</strong>; Fei-Fei Li founds ImageNet. <span class="tag tag-tech">Tech</span></li>
+    <li><span class="year">2009</span> Google begins self-driving car research; MIRI is founded. <span class="tag tag-risk">Risk</span></li>
+  </ul>
+</section>
+
+<!-- ─── 2011–2014 ──────────────────────────────────────────── -->
+<section>
+  <h2>2011–2014 &nbsp;<span class="era-badge">Deep Learning</span></h2>
+  <ul>
+    <li><span class="year">2011</span> IBM <strong>Watson</strong> wins <em>Jeopardy!</em>; Apple launches <strong>Siri</strong>. <span class="tag tag-tech">Tech</span></li>
+    <li><span class="year">2012</span> <strong>AlexNet</strong> (Krizhevsky, Sutskever, Hinton) wins ImageNet — deep learning takes over computer vision. <span class="tag tag-tech">Tech</span></li>
+    <li><span class="year">2013</span> Google's <strong>Word2Vec</strong> advances NLP; DeepMind beats Atari games with reinforcement learning.</li>
+    <li><span class="year">2014</span> Google acquires <strong>DeepMind</strong>.</li>
+    <li><span class="year">2014</span> Ian Goodfellow invents <strong>GANs</strong>, revolutionising generative AI. <span class="tag tag-tech">Tech</span></li>
+    <li><span class="year">2014</span> Amazon launches <strong>Alexa</strong>; Musk &amp; Hawking warn of existential AI risks. <span class="tag tag-risk">Risk</span></li>
+    <li><span class="year">2014</span> Future of Life Institute founded. <span class="tag tag-gov">Governance</span></li>
+  </ul>
+</section>
+
+<!-- ─── 2015–2017 ──────────────────────────────────────────── -->
+<section>
+  <h2>2015–2017 &nbsp;<span class="era-badge">Ethics Arrives</span></h2>
+  <div class="columns">
+    <div class="card">
+      <h3>Technology</h3>
+      <ul class="sub">
+        <li>Google open-sources <strong>TensorFlow</strong> (2015) — democratises deep learning</li>
+        <li>AlphaGo defeats Lee Sedol 4–1 (2016)</li>
+        <li>Google publishes <em>Attention Is All You Need</em> — <strong>Transformers</strong> (2017)</li>
+        <li>AlphaGo Zero learns entirely without human data (2017)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Governance &amp; Ethics</h3>
+      <ul class="sub">
+        <li><strong>OpenAI</strong> founded with AGI safety mission (2015)</li>
+        <li>IEEE Global Initiative on AI Ethics (2016)</li>
+        <li>Microsoft Tay chatbot incident (2016) <span class="tag tag-risk">Risk</span></li>
+        <li>Tesla Autopilot fatal crash (2016) <span class="tag tag-risk">Risk</span></li>
+        <li><strong>Asilomar AI Principles</strong> — 23 guidelines (2017)</li>
+        <li>China Next-Gen AI Plan; Partnership on AI (2017)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 2018–2019 ──────────────────────────────────────────── -->
+<section>
+  <h2>2018–2019 &nbsp;<span class="era-badge">Governance</span></h2>
+  <div class="columns">
+    <div class="card">
+      <h3>2018</h3>
+      <ul class="sub">
+        <li><strong>GDPR</strong> comes into force — data rights matter <span class="tag tag-gov">Governance</span></li>
+        <li>EU AI HLEG established</li>
+        <li>Amazon recruiting AI bias scandal <span class="tag tag-risk">Risk</span></li>
+        <li>Uber self-driving fatality <span class="tag tag-risk">Risk</span></li>
+        <li>Cambridge Analytica scandal <span class="tag tag-risk">Risk</span></li>
+        <li>OpenAI releases <strong>GPT-1</strong> <span class="tag tag-tech">Tech</span></li>
+        <li>Google releases <strong>BERT</strong>; DeepMind: AlphaFold</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>2019</h3>
+      <ul class="sub">
+        <li>EU AI HLEG: <em>Ethics Guidelines for Trustworthy AI</em> <span class="tag tag-gov">Governance</span></li>
+        <li>San Francisco bans facial recognition</li>
+        <li><strong>OECD AI Principles</strong> — first intergovernmental AI standards</li>
+        <li>OpenAI releases <strong>GPT-2</strong>, withholds full model citing safety <span class="tag tag-risk">Risk</span></li>
+        <li>OpenAI transitions to capped-profit model</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 2020–2021 ──────────────────────────────────────────── -->
+<section>
+  <h2>2020–2021 &nbsp;<span class="era-badge">Standards &amp; Generative AI</span></h2>
+  <div class="columns">
+    <div class="card">
+      <h3>2020</h3>
+      <ul class="sub">
+        <li>OpenAI releases <strong>GPT-3</strong> — NLP capabilities leap forward</li>
+        <li>DeepMind's <strong>AlphaFold 2</strong> solves protein folding</li>
+        <li>IBM, Amazon, Microsoft pause facial recognition sales to police</li>
+        <li>AI Incident Database launched</li>
+        <li>UNESCO begins global AI ethics framework</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>2021</h3>
+      <ul class="sub">
+        <li>UNESCO adopts <em>Recommendation on the Ethics of AI</em> — first global standard <span class="tag tag-gov">Governance</span></li>
+        <li>EU releases draft <strong>AI Act</strong></li>
+        <li>Google fires Timnit Gebru — diversity &amp; ethics debate <span class="tag tag-risk">Risk</span></li>
+        <li>OpenAI releases <strong>DALL-E</strong> — text-to-image generation <span class="tag tag-tech">Tech</span></li>
+        <li>GitHub launches <strong>Copilot</strong> — AI coding assistant <span class="tag tag-tech">Tech</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 2022 ────────────────────────────────────────────────── -->
+<section>
+  <h2>2022 &nbsp;<span class="era-badge">The GenAI Explosion</span></h2>
+  <ul>
+    <li>DALL-E 2, <strong>Stable Diffusion</strong> (open source), and <strong>Midjourney</strong> launch publicly — generative image revolution begins. <span class="tag tag-tech">Tech</span> <span class="tag tag-risk">Risk</span></li>
+    <li>White House publishes <em>Blueprint for an AI Bill of Rights</em>. <span class="tag tag-gov">Governance</span></li>
+    <li>Canada's AI &amp; Data Act (AIDA); UK National AI Strategy.</li>
+    <li>NIST begins AI Risk Management Framework.</li>
+  </ul>
+  <div class="big-moment" style="margin-top:1em">
+    <strong>November 2022 &nbsp;·&nbsp; ChatGPT launches</strong> <span class="tag tag-tech">Tech</span><br>
+    1 million users in 5 days. Fastest-growing consumer app in history. Transforms public awareness of AI overnight.
+  </div>
+</section>
+
+<!-- ─── 2023 ────────────────────────────────────────────────── -->
+<section>
+  <h2>2023 &nbsp;<span class="era-badge">Regulation &amp; Safety</span></h2>
+  <ul>
+    <li><span class="year">Mar</span> FLI open letter calls for 6-month pause on AI &gt; GPT-4 — signed by thousands including Musk &amp; Bengio. <span class="tag tag-risk">Risk</span></li>
+    <li><span class="year">Mar</span> Italy temporarily bans ChatGPT (GDPR). <span class="tag tag-gov">Governance</span></li>
+    <li><span class="year">—</span> NIST releases the <strong>AI Risk Management Framework</strong>.</li>
+    <li><span class="year">—</span> OpenAI releases <strong>GPT-4</strong>, advancing multimodal reasoning. <span class="tag tag-tech">Tech</span></li>
+    <li><span class="year">Oct</span> Biden signs <strong>Executive Order on Safe, Secure &amp; Trustworthy AI</strong> — most comprehensive U.S. AI policy to date. <span class="tag tag-gov">Governance</span></li>
+    <li><span class="year">Nov</span> First global <strong>AI Safety Summit at Bletchley Park</strong> — Bletchley Declaration signed by 28 countries. <span class="tag tag-gov">Governance</span></li>
+    <li><span class="year">Nov</span> <strong>OpenAI governance crisis</strong> — Altman fired, reinstated days later. Exposes tensions between safety and commercialisation. <span class="tag tag-risk">Risk</span></li>
+  </ul>
+</section>
+
+<!-- ─── 2024 ────────────────────────────────────────────────── -->
+<section>
+  <h2>2024 &nbsp;<span class="era-badge">AI Goes Everywhere</span></h2>
+  <div class="columns">
+    <div class="card">
+      <h3>Models &amp; Products</h3>
+      <ul class="sub">
+        <li>OpenAI releases <strong>GPT-4o</strong> — real-time multimodal AI</li>
+        <li>Google releases <strong>Gemini</strong>; OpenAI releases <strong>Sora</strong> (video)</li>
+        <li>OpenAI o1 reasoning models launch</li>
+        <li>Apple Intelligence in iOS 18 / macOS Sequoia</li>
+        <li>Tesla FSD v13; Google NotebookLM</li>
+        <li>xAI open-sources Grok</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Governance &amp; Society</h3>
+      <ul class="sub">
+        <li><strong>EU AI Act</strong> enters into force <span class="tag tag-gov">Governance</span></li>
+        <li>Nvidia dominates AI chips; competitors accelerate</li>
+        <li>AI in drug discovery (Insitro), waste sorting, forensics</li>
+        <li><strong>Nobel Prizes</strong> for AI: Hinton &amp; Hopfield (Physics); Hassabis, Jumper, Baker (Chemistry) <span class="tag tag-tech">Tech</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 2025 ────────────────────────────────────────────────── -->
+<section>
+  <h2>2025 &nbsp;<span class="era-badge">Age of Agents</span></h2>
+  <div class="columns">
+    <div class="card">
+      <h3>Models</h3>
+      <ul class="sub">
+        <li><strong>DeepSeek-R1</strong> — open-source, rivals GPT-4 at a fraction of cost <span class="tag tag-risk">Risk</span></li>
+        <li>OpenAI <strong>o3</strong> / o3-mini; <strong>GPT-4.5</strong></li>
+        <li>Google <strong>Gemini 2.5 Pro</strong></li>
+        <li>Anthropic <strong>Claude 3.7 Sonnet</strong> with extended thinking</li>
+        <li>Meta <strong>Llama 4</strong> (Scout &amp; Maverick) — open-source multimodal</li>
+        <li>xAI <strong>Grok 3</strong></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Trends</h3>
+      <ul class="sub">
+        <li>OpenAI <strong>Operator</strong> — first mainstream AI agent</li>
+        <li><strong>Agentic AI</strong> — plan, use tools, act autonomously</li>
+        <li><strong>"Vibe coding"</strong> — AI-assisted programming goes mainstream</li>
+        <li>EU AI Act first enforcement milestone (Feb)</li>
+        <li>U.S. AI policy debates: export controls, safety evals</li>
+        <li>Global convergence on structured AI oversight</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CLOSING ────────────────────────────────────────────── -->
+<section data-background-gradient="radial-gradient(ellipse at 70% 60%, #0d2137 0%, #0d1117 70%)">
+  <h2>Key Themes Across the Timeline</h2>
+  <div class="columns3" style="margin-top:0.8em">
+    <div class="card" style="border-color:rgba(100,181,246,0.4)">
+      <h3 style="font-size:0.9em">Capability Cycles</h3>
+      <ul class="sub">
+        <li>Two AI Winters</li>
+        <li>Each followed by a bigger wave</li>
+        <li>Hype vs. results is a recurring tension</li>
+      </ul>
+    </div>
+    <div class="card" style="border-color:rgba(129,199,132,0.4)">
+      <h3 style="font-size:0.9em">Governance Lag</h3>
+      <ul class="sub">
+        <li>Ethics frameworks follow capability</li>
+        <li>GDPR → OECD → AI Act → EO</li>
+        <li>Governance is now accelerating</li>
+      </ul>
+    </div>
+    <div class="card" style="border-color:rgba(255,183,77,0.4)">
+      <h3 style="font-size:0.9em">Democratisation</h3>
+      <ul class="sub">
+        <li>TensorFlow → open-source models</li>
+        <li>GPT-2 withheld → Llama 4 released</li>
+        <li>Access vs. safety trade-off grows</li>
+      </ul>
+    </div>
+  </div>
+  <p style="margin-top:1.4em;font-size:0.65em;color:rgba(255,255,255,0.35)">
+    This timeline is open for contributions &nbsp;·&nbsp; Based on a GARP course (Risk and AI)
+  </p>
+</section>
+
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    transition: 'fade',
+    transitionSpeed: 'fast',
+    progress: true,
+    controls: true,
+    center: true,
+    width: 1100,
+    height: 700,
+    margin: 0.06,
+  });
+</script>
+</body>
+</html>
