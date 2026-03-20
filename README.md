@@ -17,11 +17,15 @@ This Timeline is open for everyone. The timeline is a proposition, based on a co
   - Frank Rosenblatt introduces the Perceptron, one of the first neural network models.
   - Rosenblatt’s approach uses probability theory instead of symbolic logic, marking a departure from earlier methods.
 -	1959: Arthur Samuel develops a self-learning program for checkers.
+-	1966: Joseph Weizenbaum creates ELIZA at MIT, one of the first programs capable of natural language interaction. ELIZA's ability to simulate conversation raised early ethical questions about human-computer relationships and the illusion of machine understanding.
 -	1969: Marvin Minsky and Seymour Papert critique single-layer perceptrons in their book Perceptrons, halting neural network research for years.
+-	1974–1980: The First AI Winter. Reduced government funding and unmet expectations cause a significant slowdown in AI research, highlighting the gap between early AI hype and practical results.
+-	1980: Expert systems gain commercial traction. Programs like XCON (DEC) and MYCIN (Stanford) demonstrate AI's value in specialized domains, spurring investment. Japan's Fifth Generation Computer project further intensifies global interest.
 -	1982: Introduction of Principal Component Analysis (PCA) for dimensionality reduction and data analysis.
 -	1986:
   - David Rumelhart, James McClelland, and the PDP Group popularize backpropagation learning in their Parallel Distributed Processing volumes, reviving neural networks.
   - The Connectionism Movement emphasizes parallel distributed processing, providing biological inspiration for AI.
+-	1987–1993: The Second AI Winter. Expert systems prove costly to maintain and brittle outside narrow domains, causing another funding collapse and prompting deeper reflection on the limitations of rule-based AI.
 -	1997: IBM’s Deep Blue defeats Garry Kasparov in chess.
 - 1998: Yann LeCun develops LeNet-5, a convolutional neural network (CNN) for handwritten digit recognition.
 
@@ -62,6 +66,7 @@ This Timeline is open for everyone. The timeline is a proposition, based on a co
 **2015–2017: Early Ethical and Governance Milestones**
 - 2015:
   - OpenAI is founded: With the mission to ensure that artificial general intelligence (AGI) benefits all of humanity.
+  - Google open-sources TensorFlow, making deep learning infrastructure widely accessible and dramatically accelerating AI research and industry adoption.
   - The Asilomar Conference on Beneficial AI: Organized by the Future of Life Institute to discuss AI safety and ethics.
   - Publication of "Superintelligence" by Nick Bostrom: Raising awareness about the long-term risks of advanced AI.
 - 2016:
@@ -84,6 +89,7 @@ This Timeline is open for everyone. The timeline is a proposition, based on a co
   -	Uber's self-driving car accident in Arizona: Resulting in a pedestrian fatality and highlighting risks of autonomous vehicles.
   -	IBM releases the AI Fairness 360 toolkit: An open-source library to detect and mitigate bias in machine learning models.
   -	Cambridge Analytica scandal: Exposes misuse of data and AI in influencing elections, raising concerns over data privacy and AI's role in society.
+  -	OpenAI releases GPT-1, the first generative pre-trained transformer model, demonstrating the power of unsupervised pre-training for language tasks.
   -	Google develops BERT: Advancing natural language processing capabilities.
   -	DeepMind's AlphaFold makes significant advances in protein folding prediction: Highlighting AI's potential in biology and ethical considerations in biotechnology.
 - 2019:
@@ -91,6 +97,7 @@ This Timeline is open for everyone. The timeline is a proposition, based on a co
   - The U.S. Department of Defense releases its AI Strategy: Emphasizing the ethical use of AI in defense applications.
   - San Francisco bans facial recognition technology: Becoming the first major U.S. city to prohibit its use by law enforcement.
   - The OECD adopts the Principles on AI: The first international standards agreed upon by governments for the responsible stewardship of trustworthy AI.
+  - OpenAI releases GPT-2, a large language model capable of generating coherent long-form text. OpenAI controversially withholds the full model citing misuse concerns, sparking debate about responsible AI disclosure.
   - OpenAI transitions to a "capped-profit" model: Raising discussions about AI commercialization and ethics.
 - 2020:
   - UNESCO begins work on global standards for AI ethics: Initiating the development of an international framework.
@@ -106,22 +113,31 @@ This Timeline is open for everyone. The timeline is a proposition, based on a co
   -	The U.S. establishes the National AI Initiative Office: Coordinating federal AI research and policy to ensure leadership in AI while addressing associated risks.
   -	Google fires AI ethics researcher Timnit Gebru: Sparking global discussions on ethics in AI research, diversity, and corporate responsibility.
   -	The EU releases the draft of the AI Act: Proposing a regulatory framework for AI, focusing on risk management and fundamental rights.
+  -	OpenAI releases DALL-E, a neural network capable of generating images from text prompts, opening a new frontier in generative AI and raising questions about copyright, misinformation, and creative labor.
+  -	GitHub launches Copilot, an AI-powered coding assistant built on OpenAI's Codex model, transforming software development workflows and triggering debates around intellectual property and developer accountability.
   -	Advancements in AI explainability and interpretability: Efforts to make AI systems more transparent, addressing risks associated with black-box models.
 -	2022:
   - Canada introduces the Artificial Intelligence and Data Act (AIDA): Aiming to regulate AI systems and protect individuals from harm.
   - The UK publishes its National AI Strategy: Outlining plans for AI governance, innovation, and ethical deployment.
   - Facebook's AI mislabels a video, leading to apologies: Highlighting ongoing challenges with AI bias and content moderation.
   - The U.S. National Institute of Standards and Technology (NIST) begins developing the AI Risk Management Framework: To improve the ability to incorporate trustworthiness considerations into AI systems.
+  - OpenAI releases DALL-E 2, dramatically improving image quality and fidelity. Stability AI releases Stable Diffusion as open source, and Midjourney launches publicly — together triggering a generative image revolution and urgent debates on copyright, deepfakes, and consent.
+  - The White House publishes the Blueprint for an AI Bill of Rights: A non-binding framework outlining five principles to protect Americans in the age of AI, including safety, non-discrimination, and human oversight.
+  - OpenAI launches ChatGPT (November 2022), reaching one million users in five days. The conversational AI assistant becomes the fastest-growing consumer application in history, dramatically accelerating public awareness of AI and urgency around governance.
 -	2023:
+  -	March 2023: The Future of Life Institute publishes an open letter signed by thousands of researchers and technologists — including Elon Musk and Yoshua Bengio — calling for a six-month pause on training AI systems more powerful than GPT-4, citing uncontrolled risks.
   -	March 2023, Italy temporarily bans ChatGPT: Due to concerns over data privacy and compliance with GDPR. But restored EoM.
   -	NIST releases the AI Risk Management Framework (AI RMF): Providing guidelines to manage risks associated with AI systems.
   -	The EU continues refining the AI Act: Progressing towards implementing a comprehensive AI regulatory framework.
-  -	The White House announces the Blueprint for an AI Bill of Rights: Aiming to protect the American public in the age of AI.
   -	Major tech companies commit to AI safety measures: In response to increasing capabilities of AI systems and public concern.
   -	Generative AI models like GPT-4 are released: Leading to widespread discussions on AI's impact and the need for regulation.
+  -	October 2023: President Biden signs the Executive Order on Safe, Secure, and Trustworthy Artificial Intelligence, directing federal agencies to set safety standards, protect privacy, and advance equity in AI development — the most comprehensive U.S. government action on AI to date.
+  -	November 2023: The UK hosts the first global AI Safety Summit at Bletchley Park, bringing together governments, AI labs, and civil society to agree on coordinated responses to frontier AI risks. The resulting Bletchley Declaration is signed by 28 countries.
+  -	November 2023: OpenAI governance crisis — the board fires CEO Sam Altman, only to reinstate him days later following a staff revolt and Microsoft's intervention. The episode highlights fragility in AI governance structures and the tension between safety-focused and commercial imperatives.
   -	Advancements in quantum AI research: Raising new considerations for AI capabilities and associated risks.
 -	2024:
   - The EU AI Act comes into effect, establishing comprehensive regulations for artificial intelligence within the European Union.
+  - OpenAI releases GPT-4o (May 2024), a natively multimodal model capable of processing text, audio, and images in real time with significantly improved speed and natural conversational ability.
   - Google releases Gemini AI, advancing multimodal generative AI capabilities.
   - OpenAI introduces Sora, a video generation model, and O1-preview and O1-mini, available for Plus users, enhancing AI accessibility.
   - Advanced voice mode is launched, improving AI's conversational abilities.
@@ -137,6 +153,7 @@ This Timeline is open for everyone. The timeline is a proposition, based on a co
   - LAION releases BUD-E, a fully open-source voice assistant, contributing to the open AI ecosystem.
   - Researchers develop an AI-powered waste-sorting robot capable of identifying over 500 waste categories, enhancing recycling efficiency.
   - The chatbot Grok is made open source to a substantial extent, promoting transparency and collaboration in AI development.
+  - October 2024: The Nobel Prize in Physics is awarded to Geoffrey Hinton and John Hopfield for foundational work on artificial neural networks. The Nobel Prize in Chemistry is awarded to Demis Hassabis, John Jumper, and David Baker, largely in recognition of AlphaFold and AI-driven protein structure prediction — the first Nobel Prizes explicitly recognizing AI contributions.
 
 **2025: The Age of Reasoning Models and AI Agents**
 - 2025:
